@@ -1,108 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tanjeem Azwad Zaman - PhD Applicant, Computational Biology, Machine Learning, and Algorithms">
-    <meta name="author" content="Tanjeem Azwad Zaman">
-    <title>Tanjeem Azwad Zaman - PhD Applicant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-        nav {
-            margin: 1rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: #007acc;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #007acc;
-            margin-bottom: 1rem;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanjeem Azwad Zaman</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
+  <main>
+    <!-- Sidebar -->
+    <!-- Future navigation/sidebar elements can go here -->
 
-<header>
-    <h1>Tanjeem Azwad Zaman</h1>
-    <p>PhD Applicant - Fall 2025 | Computational Biology, Machine Learning, Algorithms</p>
-</header>
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
 
-<nav>
-    <a href="mailto:zaman.tanjeemazwad@gmail.com">Email</a>
-    <a href="https://github.com/Tanjeem29" target="_blank">GitHub</a>
-</nav>
+      <!-- About Section -->
+      <article class="about active" data-page="about">
+        <div class="about-flex">
+          <div class="avatar-box">
+            <img src="./assets/images/avatar.jpg" alt="Tanjeem Azwad Zaman" width="250">
+          </div>
+          <div class="info-content">
+            <h1 class="name" title="Tanjeem Azwad Zaman">Tanjeem Azwad Zaman</h1>
+            <p>PhD Applicant | Computational Biology, Machine Learning, Algorithms</p>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://github.com/Tanjeem29" class="social-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="mailto:zaman.tanjeemazwad@gmail.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a PhD applicant for Fall 2025, with a strong academic background and research focus on computational biology, machine learning, and algorithms. I graduated as the top student from the Bangladesh University of Engineering and Technology (BUET) with a perfect GPA of 4.00.</p>
-</section>
+        <section class="about-text">
+          <header>
+            <h2>About Me</h2>
+          </header>
+          <p>
+            I am a PhD applicant for Fall 2025 with a focus on computational biology, machine learning, and algorithms. 
+            I am passionate about solving complex biological problems using computational methods. I graduated top of my class from 
+            Bangladesh University of Engineering and Technology (BUET) with a perfect GPA of 4.00.
+          </p>
+        </section>
+      </article>
 
-<section>
-    <h2>Research Interests</h2>
-    <p>My primary interests include computational biology, machine learning, and algorithms. I am passionate about applying cutting-edge techniques to solve complex problems in bioinformatics and data analysis.</p>
-</section>
+      <!-- Resume Section -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2>My Resume</h2>
+        </header>
 
-<section>
-    <h2>Publications</h2>
-    <ul>
-        <li><strong>wQFM-TREE:</strong> Highly accurate and scalable quartet-based species tree inference from gene trees. <a href="https://doi.org/10.1101/2024.07.30.605630" target="_blank">DOI Link</a></li>
-        <li><strong>On the robustness of gene tree rooting:</strong> Exploring the impact on triplet-based species tree estimation methods. <a href="https://doi.org/10.1101/2024.11.22.624944" target="_blank">DOI Link</a></li>
-        <li><strong>GraFusionNet:</strong> Integrating Node, Edge, and Semantic Features for Enhanced Graph Representations. <a href="https://doi.org/10.1101/2024.11.22.624875" target="_blank">DOI Link</a></li>
-    </ul>
-</section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3>Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4>Bangladesh University of Engineering and Technology</h4>
+              <p>BSc in Computer Science and Engineering</p>
+              <span>2019 - 2024</span>
+              <p>CGPA: 4.00/4.00</p>
+            </li>
+          </ol>
+        </section>
 
-<section>
-    <h2>Education</h2>
-    <p><strong>BSc in Computer Science and Engineering (CSE)</strong><br>
-    Bangladesh University of Engineering and Technology (BUET), 2019 - 2024<br>
-    CGPA: 4.00/4.00 | Position: 1/113</p>
-</section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3>Research Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4>Undergraduate Thesis</h4>
+              <p>Robustness of Triplet-based Species Tree Estimation Methods</p>
+              <span>Aug 2023 - Present</span>
+            </li>
+          </ol>
+        </section>
+      </article>
 
-<footer>
-    <p>&copy; 2024 Tanjeem Azwad Zaman. All rights reserved.</p>
-</footer>
+      <!-- Projects Section -->
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2>Projects</h2>
+        </header>
 
+        <ul class="project-list">
+          <li class="project-item">
+            <h3>wQFM-TREE</h3>
+            <p>
+              Developed a quartet-based species tree inference tool that improves scalability and accuracy. 
+              <a href="https://doi.org/10.1101/2024.07.30.605630" target="_blank">View Publication</a>
+            </p>
+          </li>
+          <li class="project-item">
+            <h3>GraFusionNet</h3>
+            <p>
+              Integrated graph-based features using dual-autoencoder techniques for cheminformatics applications.
+              <a href="https://doi.org/10.1101/2024.11.22.624875" target="_blank">View Publication</a>
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Publications Section -->
+      <article class="publications" data-page="publications">
+        <header>
+          <h2>Publications</h2>
+        </header>
+        <ul class="publications-list">
+          <li>
+            <h3>wQFM-TREE</h3>
+            <p>
+              Highly accurate and scalable quartet-based species tree inference from gene trees.
+              <a href="https://doi.org/10.1101/2024.07.30.605630" target="_blank">DOI Link</a>
+            </p>
+          </li>
+          <li>
+            <h3>On the Robustness of Gene Tree Rooting</h3>
+            <p>
+              A study on triplet-based species tree estimation methods and their robustness to gene tree rooting.
+              <a href="https://doi.org/10.1101/2024.11.22.624944" target="_blank">DOI Link</a>
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Contact Section -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2>Contact</h2>
+        </header>
+        <ul class="contacts-list">
+          <li>
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p>Email</p>
+              <a href="mailto:zaman.tanjeemazwad@gmail.com">zaman.tanjeemazwad@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
