@@ -322,7 +322,7 @@
               <h3 class="h3" id="re" data-dropdown-item>Research Experience</h3>
             </div>
             <ol class="achievement-list">
-            <li class="achievements-flex">
+             <li class="achievements-flex">
               <div class="icon-box-achievements">
                 <ion-icon name="book-outline"></ion-icon>
               </div>
@@ -330,12 +330,9 @@
                 <h4 class="h4 timeline-item-title">Robustness to Gene Tree Rooting of Triplet-based Species Tree Estimation Methods (August 2023 - Present)</h4>
                 <span>Computational Biology, Phylogenetics</span>
                 <span style="color: black;"><i>Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/bayzid">Dr. Md Shamsuzzoha Bayzid</a></i></span>
-                <ul class="timeline-text">
-                  <li>Conducted rigorous empirical testing with different phylogenetic rooting techniques on input gene trees to evaluate their effect on the species trees estimated by triplet-based estimation methods like STELAR.</li>
-                  <li>Evaluated key parameters such as RF Distance, Triplet and Quartet Scores for simulated datasets with varying ILS, gene counts, and base pairs. Considered the correctness of inter-clade relationships for biological datasets.</li>
-                  <li>Identified and explained conditions where STELAR with algorithmic rootings yielded better performance than with Outgroup rooting, even outperforming the state-of-the-art species tree estimation method ASTRAL. </li>
-                  <li>Suggested an avenue for the underrated triplet-based methods to excel even when the true root is unknown.</li>
-                </ul>
+                <p class="timeline-text">
+                  We conducted rigorous empirical testing with different phylogenetic rooting techniques on input gene trees to evaluate their effect on the species trees estimated by triplet-based estimation methods like STELAR. We evaluated key parameters such as RF Distance, Triplet and Quartet Scores for simulated datasets with varying levels of Incomplete Lineage Sorting (ILS), gene counts, and base pairs, and considered the correctness of inter-clade relationships for biological datasets. Our analysis identified and explained conditions where STELAR with algorithmic rootings yielded better performance than with Outgroup rooting, even outperforming the state-of-the-art species tree estimation method ASTRAL. Finally, we suggested an avenue for the underrated triplet-based methods to excel even when the true root is unknown. Preprint available at: <a href="https://doi.org/10.1101/2024.11.22.624944">https://doi.org/10.1101/2024.11.22.624944</a>.
+                </p>
                 <br/>
               </div>
               <div class="left-item">
@@ -345,68 +342,73 @@
               </div>
             </li>
 
-            <li class="achievements-flex">
-              <div class="icon-box-achievements">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <div class="right-item">
-                <h4 class="h4 timeline-item-title">Highly Accurate and Scalable Quartet-Based Species Tree Inference from Gene Trees (August 2023 - July 2024)</h4>
-                <span>Computational Biology, Phylogenetics, Algorithms</span>
-                <span style="color: black;"><i>Supervised by Dr. Md Shamsuzzoha Bayzid</i></span>
-                <ul class="timeline-text">
-                  <li>Addressed the scalability issues of the quartet-based species tree estimation method wQFM </li>
-                  <li>Introduced wQFM-TREE, which uses graph theory, combinatorics, and data structures efficiently to avoid explicitly enumerating all possible quartets, as done in wQFM.</li>
-                  <li>Benchmarked against other state-of-the-art (SOTA) methods on simulated datasets (up to 2000 taxa), and empirical datasets (the One Thousand Plant Transcriptomes Initiative dataset).</li>
-                  <li>Showed that wQFM-TREE consistently outperformed or matched the accuracy of SOTA methods, ASTRAL and TREE-QMC—especially in cases with higher taxa—showcasing its competitiveness in large-scale phylogenetic analyses.</li>
-                </ul>
-                <br/>
-              </div>
-              <div class="left-item">
-                <figure class="fig-class">
-                  <img class="timeline-img" src="assets/images/wqfm_tree.png" alt="wQFM-TREE" width="400pt" height="auto">
-                </figure>
-              </div>
-            </li>
 
-            <li class="achievements-flex">
-              <div class="icon-box-achievements">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <div class="right-item">
-                <h4 class="h4 timeline-item-title">Ophthalmic Biomarker Detection using Ensembled Vision Transformers (October 2023 - Present)</h4>
-                <span>Medical Imaging, Machine Learning</span>
-                <span style="color: black;"><i>Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/msrahman">Dr. M. Sohel Rahman</a></i></span>
-                <ul class="timeline-text">
-                  <li>Used extensive data augmentations and meticulous ensembling of vision transformers to detect ophthalmic biomarkers from OCT scans, placing 1<sup>st</sup> at the IEEE SPS VIP Cup 2023.</li>
-                  <li>Consulted an ophthalmologist to learn about local and global features. Ensembled MaxViT (utilizing its strided attention to focus on the former) and EVA-02 (that excels at detecting global features) for the winning idea.</li>
-                  <li>Used data augmentation strategies including random greyscale transformation, color jitter, random resized cropping, horizontal flipping, and random perspective shifts to enhance model robustness during training.</li>
-                  <li>Post-competition, utilized unlabelled data by adopting pseudolabeling and knowledge distillation to train a single MaxViT that matched our winning solution, while significantly reducing inference time and computational cost.</li>
-                </ul>
-                <br/>
-              </div>
-              <div class="left-item">
-                <figure class="fig-class">
-                  <img class="timeline-img" src="assets/images/ophthalmic_biomarkers.png" alt="ophthalmic biomarkers detection" width="400pt" height="auto">
-                </figure>
-              </div>
-            </li>
+
+              <li class="achievements-flex">
+                <div class="icon-box-achievements">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <div class="right-item">
+                  <h4 class="h4 timeline-item-title">Highly Accurate and Scalable Quartet-Based Species Tree Inference from Gene Trees (August 2023 - July 2024)</h4>
+                  <span>Computational Biology, Phylogenetics, Algorithms</span>
+                  <span style="color: black;">
+                    <i>Supervised by Dr. Md Shamsuzzoha Bayzid</i>
+                    <span style="color: green; display: inline;">Under review at Recomb-2025</span>
+                  </span>
+                  <p class="timeline-text">
+                    We addressed the scalability issues of the quartet-based species tree estimation method wQFM. We introduced wQFM-TREE, which uses graph theory, combinatorics, and data structures efficiently to avoid explicitly enumerating all possible quartets, as done in wQFM. Our method was benchmarked against other state-of-the-art (SOTA) methods on simulated datasets (up to 2000 taxa) and empirical datasets (the One Thousand Plant Transcriptomes Initiative dataset). The results showed that wQFM-TREE consistently outperformed or matched the accuracy of SOTA methods, ASTRAL and TREE-QMC, especially in cases with higher taxa, showcasing its competitiveness in large-scale phylogenetic analyses. Preprint available at: <a href="https://doi.org/10.1101/2024.11.22.624944">https://doi.org/10.1101/2024.11.22.624944</a>.
+                  </p>
+                  <br/>
+                </div>
+                <div class="left-item">
+                  <figure class="fig-class">
+                    <img class="timeline-img" src="assets/images/wqfm_tree.png" alt="wQFM-TREE" width="400pt" height="auto">
+                  </figure>
+                </div>
+              </li>
+
+
+              <li class="achievements-flex">
+                <div class="icon-box-achievements">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <div class="right-item">
+                  <h4 class="h4 timeline-item-title">Ophthalmic Biomarker Detection using Ensembled Vision Transformers (October 2023 - Present)</h4>
+                  <span>Medical Imaging, Machine Learning</span>
+                  <span style="color: black;">
+                    <i>Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/msrahman">Dr. M. Sohel Rahman</a></i>
+                    <span style="color: green; display: inline;">Under review at IEEE TMI</span>
+                  </span>
+                  <p class="timeline-text">
+                    We used extensive data augmentations and meticulous ensembling of vision transformers to detect ophthalmic biomarkers from OCT scans, resulting in placing 1<sup>st</sup> at the IEEE SPS VIP Cup 2023. We consulted an ophthalmologist to understand both local and global features, and ensembled MaxViT (which utilizes strided attention to focus on local features) and EVA-02 (which excels at detecting global features) to form the winning idea. During training, we employed various data augmentation strategies including random greyscale transformation, color jitter, random resized cropping, horizontal flipping, and random perspective shifts to enhance model robustness. Post-competition, we utilized unlabelled data by adopting pseudolabeling and knowledge distillation techniques to train a single MaxViT model that matched our winning solution while significantly reducing inference time and computational cost. Preprint available at: <a href="https://doi.org/10.48550/arXiv.2310.14005">https://doi.org/10.48550/arXiv.2310.14005</a>.
+                  </p>
+                  <br/>
+                </div>
+                <div class="left-item">
+                  <figure class="fig-class">
+                    <img class="timeline-img" src="assets/images/ophthalmic_biomarkers.png" alt="ophthalmic biomarkers detection" width="400pt" height="auto">
+                  </figure>
+                </div>
+              </li>
+
+
 
 
               
-            <li class="achievements-flex">
+             <li class="achievements-flex">
               <div class="icon-box-achievements">
                 <ion-icon name="book-outline"></ion-icon>
               </div>
               <div class="right-item">
                 <h4 class="h4 timeline-item-title">Dual Graph Autoencoders for Enhanced Graph Representations (November 2023 - Present)</h4>
                 <span>Cheminformatics, Machine Learning, Graph Neural Networks</span>
-                <span style="color: black;"><i>Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/mrahman">Dr. Mohammad Saifur Rahman</a></i></span>
-                <ul class="timeline-text">
-                  <li>Developed a Dual-Graph Autoencoder framework that effectively utilizes both node features and the traditionally overlooked edge features in graph-structured data.</li>
-                  <li>Made graphs using node and edge features from RDkit. Final features were composed of latent layers of separate Autoencoders trained on the graphs and their line-graphs, and the Embeddings extracted by ChemBERT from SMILES.</li>
-                  <li>Benchmarked on the Tox-21 dataset (a multi-label binary classification task) and the HIV dataset from MoleculeNet. Our approach was more accurate than other GNN-based methods using edge features (like Graph Transformers).</li>
-                  <li>Conducted ablation studies with different feature combinations, gaining insights into the efficiency of structural vs. semantic features in each classification task.</li>
-                </ul>
+                <span style="color: black;">
+                  <i>Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/mrahman">Dr. Mohammad Saifur Rahman</a></i>
+                  <span style="color: green; display: inline;">Under review at ICML 2025</span>
+                </span>
+                <p class="timeline-text">
+                  We developed a Dual-Graph Autoencoder framework that effectively utilizes both node features and the traditionally overlooked edge features in graph-structured data. Graphs were made using node and edge features from RDKit, and final features were composed of latent layers of separate autoencoders trained on the graphs and their line-graphs, along with embeddings extracted by ChemBERT from SMILES. The framework was benchmarked on the Tox-21 dataset (a multi-label binary classification task) and the HIV dataset from MoleculeNet, where our approach outperformed other GNN-based methods that used edge features, such as Graph Transformers. We also conducted ablation studies using different feature combinations, providing insights into the efficiency of structural versus semantic features in each classification task. Preprint available at: <a href="https://doi.org/10.1101/2024.11.22.624875">https://doi.org/10.1101/2024.11.22.624875</a>.
+                </p>
                 <br/>
               </div>
               <div class="left-item">
@@ -415,6 +417,9 @@
                 </figure>
               </div>
             </li>
+
+
+              
           </ol>
   
           </section>
