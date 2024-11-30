@@ -341,6 +341,7 @@ article.active {
 .a {
   text-decoration: underline;
   color: blue;
+  display: inline;
 }
 
 .ion-icon {
