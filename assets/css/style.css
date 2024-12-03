@@ -307,7 +307,9 @@ article {
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
-
+.italic-text {
+  font-style: italic;
+}
 article { display: none; }
 
 article.active {
